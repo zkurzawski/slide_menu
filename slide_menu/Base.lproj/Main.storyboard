@@ -95,11 +95,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mJM-pX-Dg4" secondAttribute="bottom" id="42a-ZX-bPy"/>
+                            <constraint firstAttribute="bottom" secondItem="mJM-pX-Dg4" secondAttribute="bottom" id="42a-ZX-bPy"/>
                             <constraint firstItem="OTp-KM-1fa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BND-Fo-Y6h"/>
                             <constraint firstItem="mJM-pX-Dg4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NB5-LV-dgz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mJM-pX-Dg4" secondAttribute="trailing" id="QCC-6Z-CBU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OTp-KM-1fa" secondAttribute="bottom" id="Xoa-c3-7lq"/>
+                            <constraint firstAttribute="bottom" secondItem="OTp-KM-1fa" secondAttribute="bottom" id="Xoa-c3-7lq"/>
                             <constraint firstItem="mJM-pX-Dg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gQw-OF-sAb"/>
                             <constraint firstItem="OTp-KM-1fa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iip-Tb-Sbo"/>
                         </constraints>
@@ -115,7 +115,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="bOh-kX-Fcf"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="bOh-kX-Fcf">
+                    <connections>
+                        <action selector="panCompleted:" destination="BYZ-38-t0r" id="FWt-db-DnJ"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
